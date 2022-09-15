@@ -7,7 +7,6 @@
     --mone: Mone,Tahoma, Verdana;
     --fresca: Fresca,Tahoma, Verdana;
 }
-
 body {
     font-family: var(--mone);
     background: #222;
@@ -17,7 +16,6 @@ p {
     font-family: var(--fresca);
     font-size: 1.5rem;
 }
-
 
 /*----------- TOPBAR  -------------*/
 .navbar{
@@ -36,6 +34,8 @@ p {
      width: 99%;
  }
  .labels{
+    color:var(--bg-pink);
+text-shadow: 0px 0px 3px #fbf;
      font-size:1.5rem;
     margin:.5em;
     text-align: right;
@@ -51,7 +51,6 @@ p {
  .navbar-links li{
      list-style:none;
  }
- 
 .navbar-links li a{
     text-decoration:none;
     font-family: Tahoma,Verdana, Geneva; 
@@ -105,10 +104,6 @@ p {
     }
 }
 
-
-
-
-
 /*------       FOOTER      ----------*/
 .foot {
     margin-top: 120px;   
@@ -155,8 +150,6 @@ text-shadow: 0px 0px 4px #fbf;
 }
 
 /*----------  MISCELANIOUS -----------------*/
-
-
 #corazon {
 color: red;
 }
