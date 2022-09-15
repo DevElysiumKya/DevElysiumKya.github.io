@@ -1,1 +1,162 @@
+:root {
+    --bg-purple: #616;
+    --bg-pink:#faf;
+    --bg-html1:#d52;
+    --bg-html2:#e73;
+    --press2p: Press2P,Tahoma, Verdana;
+    --mone: Mone,Tahoma, Verdana;
+    --fresca: Fresca,Tahoma, Verdana;
+}
 
+body {
+    font-family: var(--mone);
+    background: #222;
+}
+p {
+    text-align: justify;    
+    font-family: var(--fresca);
+    font-size: 1.5rem;
+}
+
+
+/*----------- TOPBAR  -------------*/
+.navbar{
+    position: fixed;
+    z-index: 12;
+    top: 0;
+    border-style: groove;
+    border-color: var(--bg-pink);
+    border-radius: 25px;
+    display:flex;
+     justify-content:space-between;
+     align-items:center;
+    background-color: var(--bg-purple);
+     color:white;
+     box-shadow: 0px 4px 25px var(--bg-purple);
+     width: 99%;
+ }
+ .labels{
+     font-size:1.5rem;
+    margin:.5em;
+    text-align: right;
+ }
+ #slogan {
+    font-size: 1.3rem;
+ }
+ .navbar-links ul{
+    margin:0;
+     padding:0;
+     display:flex;
+ }
+ .navbar-links li{
+     list-style:none;
+ }
+ 
+.navbar-links li a{
+    text-decoration:none;
+    font-family: Tahoma,Verdana, Geneva; 
+    color:white;
+    font-size: 1.2rem;
+    padding:1rem;
+    display:block;
+}
+.toggle-button{
+    position:absolute;
+    top:.75rem;
+    right:1em;
+    display:none;
+    flex-direction:column;
+    justify-content:space-between;
+   width:30px;
+    height:21px;
+}
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+}
+@media (max-width: 750px){
+    .toggle-button {
+        display: flex;
+    }
+    .navbar-links{
+        display:none;
+        width: 100%;
+    }
+    
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar-links li {
+        text-align: center;
+    }
+    .navbar-links li a {
+        font-size: 1.6rem;
+        padding: .5rem 1rem;
+    }
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+
+
+
+
+/*------       FOOTER      ----------*/
+.foot {
+    margin-top: 120px;   
+    position:relative;  
+    z-index: 6;
+    box-shadow: 0px -4px 25px var(--bg-purple);
+    background: var(--bg-purple);
+    width: 100%;
+    padding: 20px 0px;
+    bottom: 0%;
+    color:aliceblue;
+    text-align: center;
+    font-family: var(--press2p);
+    font-size: 1.1rem;
+}
+.footer {
+    text-align: center;
+}
+.footerlink:visited, .footerlink:link, nav ul li a:visited, nav ul li a:link {
+color:var(--bg-pink);
+text-shadow: 0px 0px 4px #fbf;
+}
+.footerlink:active, .footerlink:focus, nav ul li a:active, nav ul li a:focus{
+    color:pink;
+    text-shadow: 3px 3px 3px #bbf;
+}
+.footerlink:hover, nav ul li a:hover{
+    color: var(--bg-purple);
+    text-shadow: 3px 3px 3px #bbf;
+}
+ nav ul li a:visited, nav ul li a:link {
+    color:var(--bg-pink);
+    text-shadow: 0px 0px 4px #fbf;
+    }
+ nav ul li a:active, nav ul li a:focus{
+        color:pink;
+        text-shadow: 3px 3px 3px #bbf;
+    }
+ nav ul li a:hover{ 
+    background: var(--bg-pink);
+    color: var(--bg-purple);
+        text-shadow: 1px 1px 3px rgb(40, 0, 114);
+    border-radius: 40px;
+}
+
+/*----------  MISCELANIOUS -----------------*/
+
+
+#corazon {
+color: red;
+}
