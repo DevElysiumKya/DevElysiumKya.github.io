@@ -107,6 +107,9 @@
         font-size: 0.6rem;
         -webkit-box-reflect: below -40px  linear-gradient(transparent,#0001);
     }
+    .typingtext::before {
+        top: 20px;
+    }
     .typingtext h3{
         animation: typing740 5s steps(20) infinite;
     }
