@@ -152,7 +152,7 @@ color: red;
     }
     .foot {
         margin-top: -90px;
-        position: static;
+        position: relative;
         padding-bottom: 50px;
     }
     }
