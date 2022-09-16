@@ -1,11 +1,11 @@
 #ElysaIndex {
     
-    z-index: 2;
     position: absolute;
     top: 70px;
     left: -140px;
     padding: 0px 0px 0px 10px;
-    height: 100%;
+    max-height: 100%;
+    width: auto;
     text-align: right;
 }
 /* TEXT TYPING ANIMATED */
@@ -17,7 +17,17 @@
     color: rgb(90, 160,220);
     text-shadow: 0px 0px 5px #37a;
 }
+
+@media (max-width: 1000px){
+    .nottyping, #ElysaIndex {
+        margin: 20px 0 20px 3%;
+        position: static;
+        width: 86%;
+    }
+    }
+
 .nottyping {
+    background: linear-gradient(#212,#102,#111);
     padding : 150px 0px 0px 50%;
     letter-spacing: 3px;
     font-size: 3em;
@@ -63,6 +73,6 @@
         width: 0;
     }
     30%,60% {
-        width: 404px;
+        width: 464px;
     }
 }
