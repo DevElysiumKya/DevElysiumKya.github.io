@@ -16,7 +16,7 @@
     display: flex;
     align-items: center;
     color: rgb(90, 160,220);
-    text-shadow: 0px 0px 5px #37a;
+    text-shadow: 0px 0px 7px #37a;
 }
 
 .nottyping {
@@ -101,10 +101,10 @@
    }
 @media (max-width: 740px){
     .nottyping {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     .typingtext{
-        font-size: 0.8rem;
+        font-size: 0.6rem;
     }
     .typingtext h3{
         animation: typing740 5s steps(20) infinite;
@@ -115,7 +115,7 @@
         width: 0;
     }
     30%,60% {
-        width: 374px;
+        width: 304px;
     }
 }
 /*-- BUTTON COMENZAR--*/
