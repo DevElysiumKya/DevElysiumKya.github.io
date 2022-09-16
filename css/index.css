@@ -1,8 +1,7 @@
 #ElysaIndex {
-    
     position: absolute;
     top: 70px;
-    left: -140px;
+    left: -20px;
     padding: 0px 0px 0px 10px;
     max-height: 100%;
     width: auto;
@@ -13,27 +12,19 @@
     box-sizing: border-box;
     font-family: 'Press Start 2P', cursive;
     display: flex;
-    align-items: right;
+    align-items: center;
     color: rgb(90, 160,220);
     text-shadow: 0px 0px 5px #37a;
 }
 
-@media (max-width: 1000px){
-    .nottyping, #ElysaIndex {
-        margin: 20px 0 20px 3%;
-        position: static;
-        width: 86%;
-    }
-    }
-
 .nottyping {
     background: linear-gradient(#212,#102,#111);
-    padding : 150px 0px 0px 50%;
+    padding : 150px 0px 0px 48%;
     letter-spacing: 3px;
     font-size: 3em;
 }
 #section1 {
-    padding: 0px 0px 0px 50%;
+    padding: 0px 0px 0px 48%;
     min-width: 100vh;
 }
 .typingtext {
@@ -65,8 +56,12 @@
     position: relative;
     letter-spacing: 3px;
     font-size: 3em;
-    animation: typing 5s steps(20) infinite;
     overflow: hidden;
+}
+@media (max-width:9000px){
+    .typingtext h3{
+        animation: typing 5s steps(20) infinite;
+    }
 }
 @keyframes typing {
     0%,90%,100% {
@@ -74,5 +69,138 @@
     }
     30%,60% {
         width: 464px;
+    }
+}
+
+@media (max-width: 1000px){
+    body {
+        background: linear-gradient(#102,#111);
+    }
+    .nottyping, #ElysaIndex{
+        background: none;
+        margin: 20px 0 20px 3%;
+        position: static;
+        width: 90%;
+    }
+    .nottyping, #section1{
+        position: static;
+        padding-left: 10%;
+               
+    }
+    .typingtext {
+        -webkit-box-reflect: below -60px  linear-gradient(transparent,#0001);
+    }
+    
+    #ElysaIndex {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+   }
+@media (max-width: 740px){
+    .nottyping {
+        font-size: 2rem;
+    }
+    .typingtext{
+        font-size: 0.8rem;
+    }
+    .typingtext h3{
+        animation: typing740 5s steps(20) infinite;
+    }
+}
+@keyframes typing740 {
+    0%,90%,100% {
+        width: 0;
+    }
+    30%,60% {
+        width: 374px;
+    }
+}
+/*-- BUTTON COMENZAR--*/
+@import url( 'https: //fonts.googleapis.com/css2?family=Poppins:wght®30@;400;500;600;700;800;900&display=swap');
+#sectionbtn {
+    margin-top: 50px;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+    display: flex;
+}
+#ComenzarBtn {
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    background: #434;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    padding: 10px 30px;
+    transition: 0.5s;
+}
+#ComenzarBtn:hover {
+    letter-spacing: 0.25em;
+    background: #727;
+    color: #d4d;
+    box-shadow: 0 0 30px #727;
+}
+#ComenzarBtn::before {
+    content: '';
+    position: absolute;
+    inset: 3px;
+    background: #222;
+}
+#ComenzarBtn span {
+    position: relative;
+    z-index: 1;
+}
+#ComenzarBtn i {
+position: absolute;
+inset: 0;
+display: block;
+}
+#ComenzarBtn i::before{
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 100%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    background: #111;
+    border: 2px solid #727;
+    transition: 0.7s;
+}
+#ComenzarBtn:hover i::before{
+    left:0%;
+    transform: translateX(-50%) rotate(45deg);
+    box-shadow: 37px 37px #939;
+}
+#ComenzarBtn i::after{
+    content: '';
+    position: absolute;
+    top: 42px;
+    left: 0%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    background: #111;
+    border: 2px solid #727;
+    transition: 0.7s;
+}
+#ComenzarBtn:hover i::after{
+    left:100%;
+    transform: translateX(-50%) rotate(-45deg);
+    box-shadow: 37px -37px #939;
+}
+@media (min-width: 740px) {
+    #ComenzarBtn {
+    font-size: 1.6em;
+    padding: 10px 30px;
+    }
+}
+@media (min-width: 1000px) {
+    #ComenzarBtn {
+    margin-left: 20%;
     }
 }

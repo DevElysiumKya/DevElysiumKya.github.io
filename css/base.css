@@ -10,6 +10,7 @@
 body {
     font-family: var(--mone);
     background: #111;
+    justify-content: center;
 }
 p {
     text-align: justify;    
@@ -24,7 +25,7 @@ p {
     top: 0;
     border-style: groove;
     border-color: var(--bg-pink);
-    border-radius: 25px;
+    border-radius: 10px;
     display:flex;
      justify-content:space-between;
      align-items:center;
@@ -35,13 +36,11 @@ p {
  }
  .labels{
     color:var(--bg-pink);
+    font-family: 'Press Start 2P', cursive;
 text-shadow: 0px 0px 3px #fbf;
      font-size:1.5rem;
     margin:.5em;
     text-align: right;
- }
- #slogan {
-    font-size: 1.3rem;
  }
  .navbar-links ul{
     margin:0;
@@ -56,7 +55,7 @@ text-shadow: 0px 0px 3px #fbf;
     font-family: Tahoma,Verdana, Geneva; 
     color:white;
     font-size: 1.2rem;
-    padding:0.7rem;
+    padding:0.8rem;
     display:block;
 }
 .toggle-button{
@@ -75,41 +74,23 @@ text-shadow: 0px 0px 3px #fbf;
     background: white;
     border-radius: 10px;
 }
-@media (max-width: 1000px){
-.hid1050{
-    display: none;
+
+
+
+ol {
+    border: 0px 0px 0px 10px;
+    text-align: right;
+    color: white;
+    font-family: var(--press2p);
 }
+li {
+    margin: 1px;
+       padding: 0px 2px;
 }
-@media (max-width: 700px){
-    .hid1050{
-        display:inline;
-    }
-    .toggle-button {
-        display: flex;
-    }
-    .navbar-links{
-        display:none;
-        width: 100%;
-    }
-    
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .navbar-links ul {
-        width: 100%;
-        flex-direction: column;
-    }
-    .navbar-links li {
-        text-align: center;
-    }
-    .navbar-links li a {
-        font-size: 1.6rem;
-        padding: .5rem 1rem;
-    }
-    .navbar-links.active {
-        display: flex;
-    }
+nav a {
+    font-family: var(--mone);
+    font-size: 1.2rem;
+    z-index: 4;
 }
 
 /*------       FOOTER      ----------*/
@@ -128,6 +109,7 @@ text-shadow: 0px 0px 3px #fbf;
     font-family: var(--press2p);
     font-size: 1.1rem;
 }
+
 .footer {
     text-align: center;
 }
@@ -155,7 +137,6 @@ nav ul li a:hover{
     background: var(--bg-pink);
     color: var(--bg-purple);
         text-shadow: 1px 1px 3px rgb(40, 0, 114);
-    border-radius: 40px;
 }
 
 /*----------  MISCELANIOUS -----------------*/
@@ -163,3 +144,47 @@ nav ul li a:hover{
 color: red;
 }
 
+/*---------- RESPONSIVE -----------*/
+
+@media (max-width: 1000px){
+    .hid1050{
+        display: none;
+    }
+    .foot {
+        margin-top: -90px;
+        position: static;
+        padding-bottom: 50px;
+    }
+    }
+
+    @media (max-width: 700px){
+        .hid1050{
+            display:inline;
+        }
+        .toggle-button {
+            display: flex;
+        }
+        .navbar-links{
+            display:none;
+            width: 100%;
+        }
+        
+        .navbar {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .navbar-links ul {
+            width: 100%;
+            flex-direction: column;
+        }
+        .navbar-links li {
+            text-align: center;
+        }
+        .navbar-links li a {
+            font-size: 1.6rem;
+            padding: .5rem 1rem;
+        }
+        .navbar-links.active {
+            display: flex;
+        }
+    }
