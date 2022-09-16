@@ -8,6 +8,8 @@
     text-align: right;
 }
 /* TEXT TYPING ANIMATED */
+
+
 .nottyping, #section1 {
     box-sizing: border-box;
     font-family: 'Press Start 2P', cursive;
@@ -25,7 +27,6 @@
 }
 #section1 {
     padding: 0px 0px 0px 48%;
-    min-width: 100vh;
 }
 .typingtext {
     position: relative;
@@ -78,9 +79,9 @@
     }
     .nottyping, #ElysaIndex{
         background: none;
-        margin: 20px 0 20px 3%;
+        margin: 20px 0 20px 0px;
         position: static;
-        width: 90%;
+        width: 100%;
     }
     .nottyping, #section1{
         position: static;
@@ -96,6 +97,7 @@
         padding: 0;
         width: 100%;
     }
+    
    }
 @media (max-width: 740px){
     .nottyping {
