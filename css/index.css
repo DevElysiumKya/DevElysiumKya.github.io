@@ -74,6 +74,9 @@
 }
 
 @media (max-width: 1000px){
+    .nottyping {
+        padding-top: 70px;
+    }
     body {
         background: linear-gradient(#102,#111);
     }
@@ -101,6 +104,7 @@
    }
 @media (max-width: 740px){
     .nottyping {
+        padding-top: 100px;
         font-size: 1.8rem;
     }
     .typingtext{
