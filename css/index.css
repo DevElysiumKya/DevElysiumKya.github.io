@@ -1,3 +1,9 @@
+html {
+    background-color: red;
+ overflow: hidden;
+    width: 100;
+}
+
 #ElysaIndex {
     position: absolute;
     top: 70px;
