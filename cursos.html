@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--By Kyari Nocturnal uwu-->
+<html lang="es">
+<head>
+        <meta charset="UTF-8">
+        <title>e-lysium - Cursos</title>
+        <link rel="icon" href="Icon-Elysium.ico"><link rel="shortcut icon" href="Icon-Elysium.ico">
+        <meta name="theme-color" content="#427"/>
+        <meta description="Plataforma de aprendizaje mediante monas chinas.">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--  CSS  -->
+        <link rel="stylesheet" href="./css/colors.css"/>
+        <link rel="stylesheet" href="./css/navbar.css"/>
+        <link rel="stylesheet" href="./css/cursos.css">
+         <!-- JAVASCRIPT-->
+        <script src="./js/navbar.js" defer></script>
+        <!--  GOOGLE FONTS  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fresca&family=Merienda+One&family=Press+Start+2P&display=swap" rel="stylesheet">
+        <!--Open Graph Facebook-->
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="e-lysium - Aprende con Monas Chinas" />
+        <meta property="og:image" content="./img/Elysa Index.png"/>
+        <meta property="og:description" content="Plataforma de aprendizaje mediante monas chinas." />
+        <meta property="og:site_name" content="e-lysium - Aprende con Monas Chinas" />
+</head>
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="svghome" viewBox="0 0 640 512" fill="currentColor">
+          <path d="M41.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 41.4 86.6zM288 416H576c17.7 0 32 14.3 32 32s-14.3 32-32 32H288c-17.7 0-32-14.3-32-32s14.3-32 32-32z"/>
+        </symbol>
+        <symbol id="svgbook" viewBox="0 0 448 512" fill="currentColor">
+            <path d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/>
+        </symbol>
+        <symbol id="svgmore" viewBox="0 0 640 512" fill="currentColor">
+          <path d="M64 96c0-35.3 28.7-64 64-64H512c35.3 0 64 28.7 64 64V352H512V96H128V352H64V96zM0 403.2C0 392.6 8.6 384 19.2 384H620.8c10.6 0 19.2 8.6 19.2 19.2c0 42.4-34.4 76.8-76.8 76.8H76.8C34.4 480 0 445.6 0 403.2zM281 209l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-48-48c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM393 175l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z"/>
+        </symbol>
+        <symbol id="svglogin" viewBox="0 0 16 16" fill="currentColor">
+          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
+          <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"></path>
+        </symbol>
+    </svg>
+    <nav class="navbar"><!--------------------BARRA DE NAVEGACION--------------------->
+        <div class="labels">
+            <label id="titlepage">e>_Lysium</label>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a> 
+        </div>
+        <div class="navbar-links">
+            <ul id="nav-list">
+                <li> <a class="NavHome" href="./index">
+                    <svg class="svghome1" width="24" height="20"><use xlink:href="#svghome"></use></svg> <span class="hid1050"> Inicio</span></a> </li>
+                <li> <a id="NavCursos" href="./cursos"> 
+                    <svg class="svgcursos1" width="24" height="20"><use xlink:href="#svgbook"></use></svg><span class="hid1050"> Cursos</span></a></li>
+                <li> <a id="NavConocer" href="./conocer-mas">
+                    <svg class="svgmore1" width="24" height="20"><use xlink:href="#svgmore"></use></svg><span class="hid1050"> Conocer más...</span></a></li>
+                <li> <a id="NavLogin" href="./login">
+                    <svg class="svglogin1" width="24" height="20"><use xlink:href="#svglogin"></use></svg><span class="hid1050"> Iniciar Sesión</span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <section>
+
+    </section>
+    <section class="container-cursos">
+        <a class="curso" href="./cursos/geometria/c">
+            <div class="c-name">
+                <img src="./cursos/icons/geo-icon.png" alt="LogoElysium" width="80px">
+                <div class="c-subname">
+                    <div>Geometria</div>
+                    <div>aaa</div>
+                </div>
+            </div>
+            <div class="c-des">Aprende las habilidades y herramientas que necesitas para crecer como profesional en el desarrollo de videojuegos</div>
+        </a>
+
+    </section>
+    <footer class="foot">  <!--------------------PIE DE PÁGINA--------------------->
+        <div class="footer"> 
+            <p class="footer">Página de minijuegos creada para aprender con monas chinas.</p><br>
+            <div class="footerlink"><h2>e-Lysium - Aprende con monas chinas</h2></div>
+            <p class="footer">El objetivo de esta página es crear una forma de aprendizaje simple y fácil, mediante dinámicas creativas y juegos que faciliten la práctica en distintas materias para así conseguir una mejor retención del conocimiento.</p>
+            <p class="footer">Creada por <a class="footerlink" href="https://fb.com/kyari.dani">KyariNocturnal uwu</a> <span id="corazon">❤</span></p>
+        </div>
+    </footer>    
+</body>
+</html>
