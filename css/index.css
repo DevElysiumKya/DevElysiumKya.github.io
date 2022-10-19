@@ -1,9 +1,7 @@
-html {
-    background-color: red;
- overflow: hidden;
-    width: 100;
-}
-
+/*----------  MISCELANIOUS -----------------*/
+#corazon {
+    color: red;
+    }
 #ElysaIndex {
     position: absolute;
     top: 70px;
@@ -12,10 +10,9 @@ html {
     max-height: 100%;
     width: auto;
     text-align: right;
+    z-index: -1;
 }
 /* TEXT TYPING ANIMATED */
-
-
 .nottyping, #section1 {
     box-sizing: border-box;
     font-family: 'Press Start 2P', cursive;
@@ -24,9 +21,8 @@ html {
     color: rgb(90, 160,220);
     text-shadow: 0px 0px 7px #37a;
 }
-
 .nottyping {
-    background: linear-gradient(#212,#102,#111);
+    background: linear-gradient(#212,#102,rgb(16,16,16,0));
     padding : 150px 0px 0px 48%;
     letter-spacing: 3px;
     font-size: 3em;
@@ -57,7 +53,8 @@ html {
         opacity: 0;
     }
 }
-.typingtext h3{
+.typingtext #eh3{
+    margin: 54px 0px;
     top: 0px;
     z-index: 3;
     position: relative;
@@ -66,7 +63,7 @@ html {
     overflow: hidden;
 }
 @media (max-width:9000px){
-    .typingtext h3{
+    .typingtext #eh3{
         animation: typing 5s steps(20) infinite;
     }
 }
@@ -75,18 +72,20 @@ html {
         width: 0;
     }
     30%,60% {
-        width: 464px;
+        width: 512px;
     }
 }
-
-@media (max-width: 1000px){
+@media (max-width: 1050px){
+    .typingtext #eh3{
+        margin: 35px 0;
+    }
     .nottyping {
         padding-top: 70px;
     }
     body {
         background: linear-gradient(#102,#111);
     }
-    .nottyping, #ElysaIndex{
+    .nottyping{
         background: none;
         margin: 20px 0 20px 0px;
         position: static;
@@ -94,24 +93,22 @@ html {
     }
     .nottyping, #section1{
         position: static;
-        padding-left: 10%;
-               
+        padding-left: 10%;       
     }
     .typingtext {
         -webkit-box-reflect: below -60px  linear-gradient(transparent,#0001);
     }
-    
     #ElysaIndex {
         margin: 0;
         padding: 0;
         width: 100%;
+        position: static;
     }
-    
    }
 @media (max-width: 740px){
     .nottyping {
-        padding-top: 120px;
         font-size: 1.8rem;
+        padding-top: 120px;
     }
     .typingtext{
         font-size: 0.6rem;
@@ -120,7 +117,7 @@ html {
     .typingtext::before {
         top: 20px;
     }
-    .typingtext h3{
+    .typingtext #eh3{
         animation: typing740 5s steps(20) infinite;
     }
 }
@@ -129,12 +126,13 @@ html {
         width: 0;
     }
     30%,60% {
-        width: 304px;
+        width: 328px;
     }
 }
 /*-- BUTTON COMENZAR--*/
 @import url( 'https: //fonts.googleapis.com/css2?family=Poppins:wght®30@;400;500;600;700;800;900&display=swap');
 #sectionbtn {
+    z-index: 49;
     margin-top: 50px;
     width: 100%;
     box-sizing: border-box;
@@ -156,9 +154,9 @@ html {
 }
 #ComenzarBtn:hover {
     letter-spacing: 0.25em;
-    background: #727;
-    color: #d4d;
-    box-shadow: 0 0 30px #727;
+    background: var(--bg-purple);
+    color: var(--bg-purple2);
+    box-shadow: 0 0 30px var(--bg-purple);
 }
 #ComenzarBtn::before {
     content: '';
@@ -184,13 +182,13 @@ display: block;
     width: 10px;
     height: 10px;
     background: #111;
-    border: 2px solid #727;
+    border: 2px solid var(--bg-purple);
     transition: 0.7s;
 }
 #ComenzarBtn:hover i::before{
     left:0%;
     transform: translateX(-50%) rotate(45deg);
-    box-shadow: 37px 37px #939;
+    box-shadow: 34px 34px var(--bg-purple2);
 }
 #ComenzarBtn i::after{
     content: '';
@@ -201,13 +199,13 @@ display: block;
     width: 10px;
     height: 10px;
     background: #111;
-    border: 2px solid #727;
+    border: 2px solid var(--bg-purple);
     transition: 0.7s;
 }
 #ComenzarBtn:hover i::after{
     left:100%;
     transform: translateX(-50%) rotate(-45deg);
-    box-shadow: 37px -37px #939;
+    box-shadow: 34px -34px var(--bg-purple2);
 }
 @media (min-width: 740px) {
     #ComenzarBtn {
@@ -215,8 +213,9 @@ display: block;
     padding: 10px 30px;
     }
 }
-@media (min-width: 1000px) {
+@media (min-width: 1050px) {
     #ComenzarBtn {
     margin-left: 20%;
     }
+    
 }

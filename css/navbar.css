@@ -1,0 +1,149 @@
+/*----------------------- GENERAL -----------------------*/
+.navbar{
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    border-style: groove;
+    border-color: var(--bg-blue-l);
+    border-radius: 10px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background-color: var(--bg-purple);
+    color:white;
+    box-shadow: 0px 4px 25px var(--bg-purple);
+    width: 99%;
+ }
+.labels{
+    color:var(--bg-blue-l);
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 0px 0px 3px #fbf;
+    font-size:1.5rem;
+    margin:.5em;
+    text-align: right;
+}
+.navbar-links ul{
+    margin:0;
+    padding:0;
+    display:flex;
+}
+.navbar-links li{
+    list-style:none;
+}
+.navbar-links li a{
+    text-decoration:none;
+    font-family: Tahoma,Verdana, Geneva; 
+    color:white;
+    font-size: 1.2rem;
+    padding:0.8rem;
+    display:block;
+}
+.toggle-button{
+    position:absolute;
+    top:.75rem;
+    right:1em;
+    display:none;
+    flex-direction:column;
+    justify-content:space-between;
+    width:30px;
+    height:21px;
+}
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+}
+ol {
+    border: 0px 0px 0px 10px;
+    text-align: right;
+    color: white;
+    font-family: var(--press2p);
+}
+li {
+    margin: 1px;
+    padding: 0px 2px;
+}
+nav a {
+    font-family: var(--mone);
+    font-size: 1.2rem;
+    z-index: 4;
+}
+/*----------------------- HOVERS -----------------------*/
+nav ul li a:visited, nav ul li a:link, nav ul li a:active, nav ul li a:focus {
+    color:var(--bg-blue-l);
+    text-shadow: 0px 0px 4px white;
+}
+nav ul li a:hover{ 
+        background: var(--bg-blue-l);
+        color: var(--bg-purple);
+        text-shadow: 1px 1px 3px rgb(40, 0, 114);
+}
+.footerlink, .footerlink:visited, .footerlink:link, .footerlink:active, .footerlink:focus {
+    color:var(--bg-blue-l);
+    text-shadow: 0px 0px 4px white;
+    text-decoration:none;
+}
+
+/*----------------------- FOOTER -----------------------*/
+.foot {
+    top: 90%;   
+    position:absolute;  
+    z-index: 6;
+    box-shadow: 0px -4px 25px var(--bg-purple);
+    background: var(--bg-purple);
+    width: 100%;
+    padding: 15px 0px 390px 0px;
+    bottom: 0%;
+    color:aliceblue;
+    text-align: center;
+    font-family: var(--press2p);
+    font-size: 1.1rem;
+}
+.footer {
+    text-align: center;
+}
+/*-------------------- RESPONSIVE --------------------*/
+@media (max-width: 1050px){
+    .hid1050{
+        display: none;
+    }
+    .foot {
+        margin-top: -120px;
+        position: relative;
+        padding-bottom: 50px;
+    }
+}
+@media (max-width: 700px){
+        .hid1050{
+            display:inline;
+        }
+        .toggle-button {
+            display: flex;
+        }
+        .navbar-links{
+            display:none;
+            width: 100%;
+        }
+        .navbar {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .navbar-links ul {
+            width: 100%;
+            flex-direction: column;
+        }
+        .navbar-links li {
+            text-align: center;
+        }
+        .navbar-links li a {
+            font-size: 1.6rem;
+            padding: .5rem 1rem;
+        }
+        .navbar-links.active {
+            display: flex;
+        }   
+    .foot {
+        margin-top: -90px;
+    }
+}

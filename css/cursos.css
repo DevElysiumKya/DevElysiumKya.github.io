@@ -1,0 +1,48 @@
+.container-cursos {
+    margin-top: 90px;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 90px auto;
+    justify-content:space-around;
+    
+}
+.curso:hover{ 
+        background: var(--bg-purple2);
+        transition: 0.4s;
+}
+.curso {
+    text-decoration: none;
+    border-radius: 32px;
+    border: 2px solid var(--bg-blue-l);
+    background-color: var(--bg-purple);
+    color: white;
+    font-family: 'Courier New', Courier;
+    font-weight:900;
+    width: 305px;
+    height: auto;
+    text-align: justify;
+    margin: 10px 2px;
+    text-shadow: 0px 0px 6px #47f;
+}
+.c-name {
+    display: flex;
+    color: gold;
+    font-size: 30px;
+    display: flex;
+    padding: 10px 10px 0;
+    align-items: center;
+    justify-content: space-around;
+}
+.c-des {
+    font-size: 17px;
+    padding: 10px;
+}
+.c-subname {
+    text-align: center;
+}
+.foot {
+    margin-top: 0px;
+    position: relative !important;
+    top: 0;
+    padding-bottom: 30px;
+}
