@@ -103,6 +103,9 @@ nav ul li a:hover{
 .footer {
     text-align: center;
 }
+#corazon {
+    color: red;
+    }
 /*-------------------- RESPONSIVE --------------------*/
 @media (max-width: 1050px){
     .hid1050{
